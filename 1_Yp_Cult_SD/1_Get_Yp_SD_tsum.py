@@ -1,3 +1,5 @@
+# This code is used to plot the original output of the WOFOST simulated yield potential
+
 import os
 import pandas as pd
 import xarray as xr
@@ -6,7 +8,7 @@ import numpy as np
 model_output_dir = "/lustre/nobackup/WUR/ESG/zhou111/WOFOST-Nutrient/CaseStudy/Yangtze/Output/Output_Yp"
 output_path = "/lustre/nobackup/WUR/ESG/zhou111/Model_Results/1_Yp_WOFOST/Yangtze"
 
-crop_types = ["mainrice"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
+crop_types = ["mainrice", "secondrice"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 
 for crop in crop_types:
     # Read the file
@@ -57,7 +59,7 @@ for crop in crop_types:
     ds['Sow_date'].attrs['units'] = 'dekad'
     ds['Growing_length'].attrs['units'] = 'days'
  
-    output_ncfile = os.path.join(output_path, f"{crop}_Yp_his.nc")
+    output_ncfile = os.path.join(output_path, f"{crop}_Yp_his_org.nc")
     # Save the Dataset to a NetCDF file
     ds.to_netcdf(output_ncfile)
 

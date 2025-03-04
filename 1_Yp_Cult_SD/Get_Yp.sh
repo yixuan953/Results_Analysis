@@ -12,5 +12,8 @@
 #--------------------Environment, Operations and Job steps-------------
 module load python/3.12.0
 
-# Python scripts
-python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/1_Yp_Cult_SD/1_Get_Yp_SD_tsum.py
+# 1. Extract sowing date + cultivar (tsum 1&2) combinations that gives the highest potential yield
+# python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/1_Yp_Cult_SD/1_Get_Yp_SD_tsum.py
+
+# 2. Exclude unreasonable pixels
+python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/1_Yp_Cult_SD/2_Exc_Pixel.py
