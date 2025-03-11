@@ -10,8 +10,20 @@ The code of this folder is used to:
     YRB (Yangtze River Basin)
         Main Rice
         Growing days: < 170 days
-        Potential yield > 3500 kg/ha, < 14000 kg/ha (the value is set as 14000 kg/ha as it is really hard to find the potential yield larger than that globally)
+        Potential yield > 3500 kg/ha, < 14000 kg/ha (the value is set as 14000 kg/ha as it is really hard to find the potential yield larger than that according to global yield gap atlas)
 
         Second Rice
-        Growing days: < 130 days
-        Potential yield > 3500 kg/ha, < 14000 kg/ha (the value is set as 14000 kg/ha as it is really hard to find the potential yield larger than that globally)
+        Growing days: < 140 days
+        Potential yield > 3500 kg/ha, < 14000 kg/ha (the value is set as 14000 kg/ha as it is really hard to find the potential yield larger than that according to global yield gap atlas)
+
+        Maize
+        Growing days: < 140 days
+        Potential yield > 3500 kg/ha, < 15000 kg/ha
+
+        Winterwheat
+        Growing days: < 140 days
+        Potential yield > 3500 kg/ha, < 13000 kg/ha 
+
+        Soybean
+        Growing days: < 140 days
+        Potential yield > 3500 kg/ha, < 8000 kg/ha

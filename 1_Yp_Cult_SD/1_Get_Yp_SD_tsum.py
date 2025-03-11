@@ -8,7 +8,7 @@ import numpy as np
 model_output_dir = "/lustre/nobackup/WUR/ESG/zhou111/WOFOST-Nutrient/CaseStudy/Yangtze/Output/Output_Yp"
 output_path = "/lustre/nobackup/WUR/ESG/zhou111/Model_Results/1_Yp_WOFOST/Yangtze"
 
-crop_types = ["mainrice", "secondrice"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
+crop_types = ["maize","winterwheat"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 
 for crop in crop_types:
     # Read the file

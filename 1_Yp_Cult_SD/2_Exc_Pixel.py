@@ -15,7 +15,7 @@ import numpy as np
 input_dir = "/lustre/nobackup/WUR/ESG/zhou111/Model_Results/1_Yp_WOFOST/Yangtze"
 output_dir = "/lustre/nobackup/WUR/ESG/zhou111/Model_Results/1_Yp_WOFOST/Yangtze"
 
-crop_types = ["mainrice", "secondrice"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
+crop_types = ["maize","winterwheat"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 
 for crop in crop_types:
     # Read the file
@@ -30,7 +30,20 @@ for crop in crop_types:
        mask = (ds["Growing_length"] >= 170) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 14000)
     
     if crop == "secondrice":
-       mask = (ds["Growing_length"] >= 130) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 14000)
+       mask = (ds["Growing_length"] >= 140) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 14000)
+
+    if crop == "winterwheat":
+       mask = (ds["Growing_length"] >= 270) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 14000)
+
+    if crop == "springwheat":
+       mask = (ds["Growing_length"] >= 300) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 14000)
+
+    if crop == "maize":
+       mask = (ds["Growing_length"] >= 130) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 15000)
+
+    if crop == "soybean":
+       mask = (ds["Growing_length"] >= 180) | (ds["Potential_Yield_WOFOST"] < 3500) | (ds["Potential_Yield_WOFOST"] > 8000)
+
 
     ds_filtered = ds.where(~mask, other=np.nan)  # Change `np.nan` to -9999 if needed
 
