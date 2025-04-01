@@ -19,3 +19,4 @@ module load python/3.12.0
 # python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/2_Res_Compare.py
 
 # 3. Plot the irrigation demand
+python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/3_Irrigation_Demand.py

@@ -9,7 +9,7 @@ import numpy as np
 import datetime as dt
 
 StudyAreas = ["Yangtze"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
-crop_types = ["maize"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
+crop_types = ["mainrice","secondrice","soybean","winterwheat"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 
 for StudyArea in StudyAreas:
     meteo_data_dir = f"/lustre/nobackup/WUR/ESG/zhou111/Data/Climate_Forcing/WFDE5/{StudyArea}/{StudyArea}_Prec_daily_1985-2019.nc"
