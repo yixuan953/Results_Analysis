@@ -5,7 +5,7 @@ import pandas as pd
 import xarray as xr
 import numpy as np
 
-StudyAreas = ["LaPlata", "Indus"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
+StudyAreas = ["Rhine"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
 crop_types = ["maize"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 
 for StudyArea in StudyAreas:
@@ -15,6 +15,11 @@ for StudyArea in StudyAreas:
     for crop in crop_types:
         # Read the file
         model_result = os.path.join(model_output_dir, f"{crop}_Yp_1985-2014.csv")
+
+        if not os.path.exists(model_result):
+            print(f"File not found: {model_result}, skipping...")
+            continue
+        
         df = pd.read_csv(model_result)
 
         # Get the row with the highest average yield

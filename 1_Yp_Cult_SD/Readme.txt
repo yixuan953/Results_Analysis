@@ -5,6 +5,7 @@ The code of this folder is used to:
 
 2_Exc_Pixel.py
     - Exclude pixel that has "unreasonable" yield/growing days
+    - Get the final crop mask for further simulations
 
     Here: 
     YRB (Yangtze River Basin)
