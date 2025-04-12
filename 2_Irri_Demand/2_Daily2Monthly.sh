@@ -22,7 +22,7 @@ output_dir="/lustre/nobackup/WUR/ESG/zhou111/Data/Irrigation"
 
 # Crop types
 StudyAreas=("Yangtze") # "Rhine" "Yangtze" "LaPlata" "Indus"
-CropTypes=('maize') # 'mainrice' 'secondrice' 'springwheat' 'winterwheat' 'soybean' 'maize'
+CropTypes=('mainrice' 'secondrice' 'winterwheat' 'soybean') # 'mainrice' 'secondrice' 'springwheat' 'winterwheat' 'soybean' 'maize'
 
 Cal_Daily_Irri_Demand(){
 
@@ -66,7 +66,7 @@ Daily_to_Monthly(){
 
 # ------------- List of functions ------------
 # 1. Calculate the Daily irrigation demand
-# Cal_Daily_Irri_Demand
+Cal_Daily_Irri_Demand
 
 # 2. Aggregate daily irrigation demand to monthly scale
 Daily_to_Monthly

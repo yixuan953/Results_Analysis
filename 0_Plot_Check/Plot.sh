@@ -19,4 +19,10 @@ module load python/3.12.0
 # python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/2_Res_Compare.py
 
 # 3. Plot the irrigation demand
-python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/3_Irrigation_Demand.py
+# python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/3_Irrigation_Demand.py
+
+# 4. Plot the nutrient demand
+# python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/4_Nutrient_Demand.py
+
+# 5. Plot the irrigation rate calculated basing the water deficit
+python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/5_Plot_Irrigation_Rate.py
