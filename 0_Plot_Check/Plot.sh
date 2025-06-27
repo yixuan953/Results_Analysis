@@ -10,7 +10,11 @@
 #SBATCH --mem=250000
 
 #--------------------Environment, Operations and Job steps-------------
-module load python/3.12.0
+conda activate myenv
+
+# To load the corresponding modules that would be used in python code
+# conda install xarray matplotlib numpy
+# conda install -c conda-forge netcdf4 h5netcdf
 
 # 1. Plot the potential yield and harvested area
 # python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/0_Plot_Check/1_Yp_HA.py
