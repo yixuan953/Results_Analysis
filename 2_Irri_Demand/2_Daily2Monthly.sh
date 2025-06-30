@@ -15,24 +15,23 @@ module load cdo
 module load hdf5
 
 # Path for original input, final output, and processed data that will be deleted.
-input_dir="/lustre/nobackup/WUR/ESG/zhou111/Model_Results/1_Yp_WOFOST"
-meteo_input_dir="/lustre/nobackup/WUR/ESG/zhou111/Data/Climate_Forcing/WFDE5"
+input_dir="/lustre/nobackup/WUR/ESG/zhou111/WOFOST-withoutNPLimit/Output/Daily_nc_file"
+meteo_input_dir="/lustre/nobackup/WUR/ESG/zhou111/WOFOST-withoutNPLimit/CaseStudy_Meteo"
 process_dir="/lustre/nobackup/WUR/ESG/zhou111/Data/Processed/Hydro"
-output_dir="/lustre/nobackup/WUR/ESG/zhou111/Data/Irrigation"
 
 # Crop types
 StudyAreas=("Yangtze") # "Rhine" "Yangtze" "LaPlata" "Indus"
-CropTypes=('mainrice' 'secondrice' 'winterwheat' 'soybean') # 'mainrice' 'secondrice' 'springwheat' 'winterwheat' 'soybean' 'maize'
+CropTypes=('mainrice' 'secondrice' 'winterwheat' 'soybean' 'maize') # 'mainrice' 'secondrice' 'springwheat' 'winterwheat' 'soybean' 'maize'
 
 Cal_Daily_Irri_Demand(){
 
     for studyarea in "${StudyAreas[@]}"; 
     do  
-        meteo_data="${meteo_input_dir}/${studyarea}/${studyarea}_Prec_daily_1985-2019.nc"
+        meteo_data="${meteo_input_dir}/${studyarea}/${studyarea}_Prec_daily_1981-2019.nc"
         
         for croptype in "${CropTypes[@]}"; 
         do
-            wofost_output="${input_dir}/${studyarea}/${studyarea}_${croptype}_Yp_daily.nc"
+            wofost_output="${input_dir}/${studyarea}_${croptype}_Yp_daily.nc"
             
             # Cut the meteo data using the mask of wofost_output data
             export HDF5_DISABLE_VERSION_CHECK=1

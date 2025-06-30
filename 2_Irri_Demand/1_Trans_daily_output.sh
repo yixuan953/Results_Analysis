@@ -10,11 +10,9 @@
 #SBATCH --mem=250000
 
 #--------------------Environment, Operations and Job steps-------------
-conda init
-
+source /home/WUR/zhou111/miniconda3/etc/profile.d/conda.sh
 conda activate myenv
-
-conda install xarray matplotlib numpy datetime
 
 # 1. Convert wofost daily output from .csv to netcdf
 python /lustre/nobackup/WUR/ESG/zhou111/Code/Data_Processing/Result_Analysis/2_Irri_Demand/1_Trans_csv2nc_daily.py
+conda deactivate

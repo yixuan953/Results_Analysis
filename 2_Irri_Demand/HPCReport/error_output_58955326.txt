@@ -1,0 +1,631 @@
+remove cdo 1.9.3 (GCC) library and binaries.
+remove hdf5 1.10.1 (gcc) library and binaries.
+remove Scientific Linux 7 libraries.
+load cdo 1.9.3 (GCC) library and binaries.
+load hdf5 1.10.1 (gcc) library and binaries.
+load Scientific Linux 7 libraries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+remove hdf5 1.10.1 (gcc) library and binaries.
+remove Scientific Linux 7 libraries.
+load hdf5 1.10.1 (gcc) library and binaries.
+load Scientific Linux 7 libraries.
+remove Scientific Linux 7 libraries.
+load Scientific Linux 7 libraries.
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 252 in H5Pcreate(): not a property list class
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5Pfapl.c line 1907 in H5Pset_fclose_degree(): can't find object for ID
+    major: Object atom
+    minor: Unable to find atom information (already closed?)
+  #001: H5Pint.c line 3815 in H5P_object_verify(): property list is not a member of the class
+    major: Property lists
+    minor: Unable to register new atom
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.9, library is 1.10.1
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.10.1
+                  Configured on: Tue Jul  4 13:49:35 CEST 2017
+                  Configured by: root@master1
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux master1 3.10.0-327.4.5.el7.x86_64 #1 SMP Mon Jan 25 13:30:47 CST 2016 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /cm/shared/apps/hdf5/gcc/64/1.10.1
+
+Compiling Options:
+------------------
+                     Build Mode: production
+              Debugging Symbols: no
+                        Asserts: no
+                      Profiling: no
+             Optimization Level: high
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /cm/shared/apps/gcc/5.4.0/bin/gcc ( gcc (GCC) 5.4.0)
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: -fPIC
+                     H5 C Flags: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wfloat-equal -Wmissing-format-attribute -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wnormalized -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wdate-time -Warray-bounds=2 -Wc99-c11-compat -fstdarg-opt -s -Wno-inline -Wno-aggregate-return -Wno-missing-noreturn -Wno-suggest-attribute=const -Wno-suggest-attribute=pure -Wno-suggest-attribute=noreturn -Wno-suggest-attribute=format -O3
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: yes
+               Fortran Compiler: /cm/shared/apps/gcc/5.4.0/bin/gfortran ( GNU Fortran (GCC) 5.4.0)
+                  Fortran Flags: 
+               H5 Fortran Flags:  -pedantic -Wall -Wextra -Wunderflow -Wimplicit-interface -Wsurprising -Wno-c-binding-type  -s -O2
+               AM Fortran Flags: 
+         Shared Fortran Library: yes
+         Static Fortran Library: yes
+
+                            C++: no
+
+                           Java: no
+
+
+Features:
+---------
+                  Parallel HDF5: no
+             High-level library: yes
+                   Threadsafety: no
+            Default API mapping: v110
+ With deprecated public symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: no
+                     Direct VFD: no
+                        dmalloc: no
+ Packages w/ extra debug output: none
+                    API tracing: no
+           Using memory checker: no
+Memory allocation sanity checks: no
+            Metadata trace file: no
+         Function stack tracing: no
+      Strict file format checks: no
+   Optimization instrumentation: no
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5F.c line 582 in H5Fopen(): can't set access and transfer property lists
+    major: File accessibilty
+    minor: Can't set value
+  #001: H5Pint.c line 5504 in H5P_verify_apl_and_dxpl(): not the required access property list
+    major: Property lists
+    minor: Inappropriate type
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 1513 in H5Pclose(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+cdo remapnn: Nearest neighbor weights from lonlat (60x23) to lonlat (41x21) grid, with source mask (1370)
+cdo remapnn: Processed 19656720 values from 1 variable over 14244 timesteps [2.58s 50MB]
+cdo expr: Processed 22712319 values from 7 variables over 8793 timesteps [1.55s 45MB]
+cdo sub: Processed 15141546 values from 2 variables over 17586 timesteps [1.26s 53MB]
+cdo setrtoc: Processed 7570773 values from 1 variable over 8793 timesteps [0.88s 41MB]
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 252 in H5Pcreate(): not a property list class
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5Pfapl.c line 1907 in H5Pset_fclose_degree(): can't find object for ID
+    major: Object atom
+    minor: Unable to find atom information (already closed?)
+  #001: H5Pint.c line 3815 in H5P_object_verify(): property list is not a member of the class
+    major: Property lists
+    minor: Unable to register new atom
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.9, library is 1.10.1
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.10.1
+                  Configured on: Tue Jul  4 13:49:35 CEST 2017
+                  Configured by: root@master1
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux master1 3.10.0-327.4.5.el7.x86_64 #1 SMP Mon Jan 25 13:30:47 CST 2016 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /cm/shared/apps/hdf5/gcc/64/1.10.1
+
+Compiling Options:
+------------------
+                     Build Mode: production
+              Debugging Symbols: no
+                        Asserts: no
+                      Profiling: no
+             Optimization Level: high
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /cm/shared/apps/gcc/5.4.0/bin/gcc ( gcc (GCC) 5.4.0)
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: -fPIC
+                     H5 C Flags: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wfloat-equal -Wmissing-format-attribute -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wnormalized -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wdate-time -Warray-bounds=2 -Wc99-c11-compat -fstdarg-opt -s -Wno-inline -Wno-aggregate-return -Wno-missing-noreturn -Wno-suggest-attribute=const -Wno-suggest-attribute=pure -Wno-suggest-attribute=noreturn -Wno-suggest-attribute=format -O3
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: yes
+               Fortran Compiler: /cm/shared/apps/gcc/5.4.0/bin/gfortran ( GNU Fortran (GCC) 5.4.0)
+                  Fortran Flags: 
+               H5 Fortran Flags:  -pedantic -Wall -Wextra -Wunderflow -Wimplicit-interface -Wsurprising -Wno-c-binding-type  -s -O2
+               AM Fortran Flags: 
+         Shared Fortran Library: yes
+         Static Fortran Library: yes
+
+                            C++: no
+
+                           Java: no
+
+
+Features:
+---------
+                  Parallel HDF5: no
+             High-level library: yes
+                   Threadsafety: no
+            Default API mapping: v110
+ With deprecated public symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: no
+                     Direct VFD: no
+                        dmalloc: no
+ Packages w/ extra debug output: none
+                    API tracing: no
+           Using memory checker: no
+Memory allocation sanity checks: no
+            Metadata trace file: no
+         Function stack tracing: no
+      Strict file format checks: no
+   Optimization instrumentation: no
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5F.c line 582 in H5Fopen(): can't set access and transfer property lists
+    major: File accessibilty
+    minor: Can't set value
+  #001: H5Pint.c line 5504 in H5P_verify_apl_and_dxpl(): not the required access property list
+    major: Property lists
+    minor: Inappropriate type
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 1513 in H5Pclose(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+cdo remapnn: Nearest neighbor weights from lonlat (60x23) to lonlat (32x18) grid, with source mask (1370)
+cdo remapnn: Processed 19656720 values from 1 variable over 14244 timesteps [1.77s 51MB]
+cdo expr: Processed 10984896 values from 7 variables over 6357 timesteps [0.88s 39MB]
+cdo sub: Processed 7323264 values from 2 variables over 12714 timesteps [0.80s 47MB]
+cdo setrtoc: Processed 3661632 values from 1 variable over 6357 timesteps [0.56s 36MB]
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 252 in H5Pcreate(): not a property list class
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5Pfapl.c line 1907 in H5Pset_fclose_degree(): can't find object for ID
+    major: Object atom
+    minor: Unable to find atom information (already closed?)
+  #001: H5Pint.c line 3815 in H5P_object_verify(): property list is not a member of the class
+    major: Property lists
+    minor: Unable to register new atom
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.9, library is 1.10.1
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.10.1
+                  Configured on: Tue Jul  4 13:49:35 CEST 2017
+                  Configured by: root@master1
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux master1 3.10.0-327.4.5.el7.x86_64 #1 SMP Mon Jan 25 13:30:47 CST 2016 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /cm/shared/apps/hdf5/gcc/64/1.10.1
+
+Compiling Options:
+------------------
+                     Build Mode: production
+              Debugging Symbols: no
+                        Asserts: no
+                      Profiling: no
+             Optimization Level: high
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /cm/shared/apps/gcc/5.4.0/bin/gcc ( gcc (GCC) 5.4.0)
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: -fPIC
+                     H5 C Flags: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wfloat-equal -Wmissing-format-attribute -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wnormalized -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wdate-time -Warray-bounds=2 -Wc99-c11-compat -fstdarg-opt -s -Wno-inline -Wno-aggregate-return -Wno-missing-noreturn -Wno-suggest-attribute=const -Wno-suggest-attribute=pure -Wno-suggest-attribute=noreturn -Wno-suggest-attribute=format -O3
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: yes
+               Fortran Compiler: /cm/shared/apps/gcc/5.4.0/bin/gfortran ( GNU Fortran (GCC) 5.4.0)
+                  Fortran Flags: 
+               H5 Fortran Flags:  -pedantic -Wall -Wextra -Wunderflow -Wimplicit-interface -Wsurprising -Wno-c-binding-type  -s -O2
+               AM Fortran Flags: 
+         Shared Fortran Library: yes
+         Static Fortran Library: yes
+
+                            C++: no
+
+                           Java: no
+
+
+Features:
+---------
+                  Parallel HDF5: no
+             High-level library: yes
+                   Threadsafety: no
+            Default API mapping: v110
+ With deprecated public symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: no
+                     Direct VFD: no
+                        dmalloc: no
+ Packages w/ extra debug output: none
+                    API tracing: no
+           Using memory checker: no
+Memory allocation sanity checks: no
+            Metadata trace file: no
+         Function stack tracing: no
+      Strict file format checks: no
+   Optimization instrumentation: no
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5F.c line 582 in H5Fopen(): can't set access and transfer property lists
+    major: File accessibilty
+    minor: Can't set value
+  #001: H5Pint.c line 5504 in H5P_verify_apl_and_dxpl(): not the required access property list
+    major: Property lists
+    minor: Inappropriate type
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 1513 in H5Pclose(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+cdo remapnn: Nearest neighbor weights from lonlat (60x23) to lonlat (41x21) grid, with source mask (1370)
+cdo remapnn: Processed 19656720 values from 1 variable over 14244 timesteps [1.80s 51MB]
+cdo expr: Processed 27798246 values from 7 variables over 10762 timesteps [1.82s 49MB]
+cdo sub: Processed 18532164 values from 2 variables over 21524 timesteps [1.54s 57MB]
+cdo setrtoc: Processed 9266082 values from 1 variable over 10762 timesteps [1.10s 44MB]
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 252 in H5Pcreate(): not a property list class
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5Pfapl.c line 1907 in H5Pset_fclose_degree(): can't find object for ID
+    major: Object atom
+    minor: Unable to find atom information (already closed?)
+  #001: H5Pint.c line 3815 in H5P_object_verify(): property list is not a member of the class
+    major: Property lists
+    minor: Unable to register new atom
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.9, library is 1.10.1
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.10.1
+                  Configured on: Tue Jul  4 13:49:35 CEST 2017
+                  Configured by: root@master1
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux master1 3.10.0-327.4.5.el7.x86_64 #1 SMP Mon Jan 25 13:30:47 CST 2016 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /cm/shared/apps/hdf5/gcc/64/1.10.1
+
+Compiling Options:
+------------------
+                     Build Mode: production
+              Debugging Symbols: no
+                        Asserts: no
+                      Profiling: no
+             Optimization Level: high
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /cm/shared/apps/gcc/5.4.0/bin/gcc ( gcc (GCC) 5.4.0)
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: -fPIC
+                     H5 C Flags: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wfloat-equal -Wmissing-format-attribute -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wnormalized -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wdate-time -Warray-bounds=2 -Wc99-c11-compat -fstdarg-opt -s -Wno-inline -Wno-aggregate-return -Wno-missing-noreturn -Wno-suggest-attribute=const -Wno-suggest-attribute=pure -Wno-suggest-attribute=noreturn -Wno-suggest-attribute=format -O3
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: yes
+               Fortran Compiler: /cm/shared/apps/gcc/5.4.0/bin/gfortran ( GNU Fortran (GCC) 5.4.0)
+                  Fortran Flags: 
+               H5 Fortran Flags:  -pedantic -Wall -Wextra -Wunderflow -Wimplicit-interface -Wsurprising -Wno-c-binding-type  -s -O2
+               AM Fortran Flags: 
+         Shared Fortran Library: yes
+         Static Fortran Library: yes
+
+                            C++: no
+
+                           Java: no
+
+
+Features:
+---------
+                  Parallel HDF5: no
+             High-level library: yes
+                   Threadsafety: no
+            Default API mapping: v110
+ With deprecated public symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: no
+                     Direct VFD: no
+                        dmalloc: no
+ Packages w/ extra debug output: none
+                    API tracing: no
+           Using memory checker: no
+Memory allocation sanity checks: no
+            Metadata trace file: no
+         Function stack tracing: no
+      Strict file format checks: no
+   Optimization instrumentation: no
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5F.c line 582 in H5Fopen(): can't set access and transfer property lists
+    major: File accessibilty
+    minor: Can't set value
+  #001: H5Pint.c line 5504 in H5P_verify_apl_and_dxpl(): not the required access property list
+    major: Property lists
+    minor: Inappropriate type
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 1513 in H5Pclose(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+cdo remapnn: Nearest neighbor weights from lonlat (60x23) to lonlat (36x21) grid, with source mask (1370)
+cdo remapnn: Processed 19656720 values from 1 variable over 14244 timesteps [1.76s 51MB]
+cdo expr: Processed 12841416 values from 7 variables over 5662 timesteps [0.89s 38MB]
+cdo sub: Processed 8560944 values from 2 variables over 11324 timesteps [0.78s 47MB]
+cdo setrtoc: Processed 4280472 values from 1 variable over 5662 timesteps [0.54s 37MB]
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 252 in H5Pcreate(): not a property list class
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5Pfapl.c line 1907 in H5Pset_fclose_degree(): can't find object for ID
+    major: Object atom
+    minor: Unable to find atom information (already closed?)
+  #001: H5Pint.c line 3815 in H5P_object_verify(): property list is not a member of the class
+    major: Property lists
+    minor: Unable to register new atom
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+Warning! ***HDF5 library version mismatched error***
+The HDF5 header files used to compile this application do not match
+the version used by the HDF5 library to which this application is linked.
+Data corruption or segmentation faults may occur if the application continues.
+This can happen when an application was compiled by one version of HDF5 but
+linked with a different version of static or shared HDF5 library.
+You should recompile the application or check your shared library related
+settings such as 'LD_LIBRARY_PATH'.
+'HDF5_DISABLE_VERSION_CHECK' environment variable is set to 1, application will
+continue at your own risk.
+Headers are 1.8.9, library is 1.10.1
+	    SUMMARY OF THE HDF5 CONFIGURATION
+	    =================================
+
+General Information:
+-------------------
+                   HDF5 Version: 1.10.1
+                  Configured on: Tue Jul  4 13:49:35 CEST 2017
+                  Configured by: root@master1
+                    Host system: x86_64-unknown-linux-gnu
+              Uname information: Linux master1 3.10.0-327.4.5.el7.x86_64 #1 SMP Mon Jan 25 13:30:47 CST 2016 x86_64 x86_64 x86_64 GNU/Linux
+                       Byte sex: little-endian
+             Installation point: /cm/shared/apps/hdf5/gcc/64/1.10.1
+
+Compiling Options:
+------------------
+                     Build Mode: production
+              Debugging Symbols: no
+                        Asserts: no
+                      Profiling: no
+             Optimization Level: high
+
+Linking Options:
+----------------
+                      Libraries: static, shared
+  Statically Linked Executables: 
+                        LDFLAGS: 
+                     H5_LDFLAGS: 
+                     AM_LDFLAGS: 
+                Extra libraries: -lz -ldl -lm 
+                       Archiver: ar
+                         Ranlib: ranlib
+
+Languages:
+----------
+                              C: yes
+                     C Compiler: /cm/shared/apps/gcc/5.4.0/bin/gcc ( gcc (GCC) 5.4.0)
+                       CPPFLAGS: 
+                    H5_CPPFLAGS: -D_GNU_SOURCE -D_POSIX_C_SOURCE=200112L   -DNDEBUG -UH5_DEBUG_API
+                    AM_CPPFLAGS: 
+                        C Flags: -fPIC
+                     H5 C Flags: -std=c99 -pedantic -Wall -Wextra -Wundef -Wshadow -Wpointer-arith -Wbad-function-cast -Wcast-qual -Wcast-align -Wwrite-strings -Wconversion -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wredundant-decls -Wnested-externs -Wfloat-equal -Wmissing-format-attribute -Wpacked -Wdisabled-optimization -Wformat=2 -Wunreachable-code -Wendif-labels -Wdeclaration-after-statement -Wold-style-definition -Winvalid-pch -Wvariadic-macros -Winit-self -Wmissing-include-dirs -Wswitch-default -Wswitch-enum -Wunused-macros -Wunsafe-loop-optimizations -Wc++-compat -Wnormalized -Wlogical-op -Wlarger-than=2048 -Wvla -Wsync-nand -Wframe-larger-than=16384 -Wpacked-bitfield-compat -Wstrict-overflow=5 -Wjump-misses-init -Wunsuffixed-float-constants -Wdouble-promotion -Wtrampolines -Wstack-usage=8192 -Wvector-operation-performance -Wdate-time -Warray-bounds=2 -Wc99-c11-compat -fstdarg-opt -s -Wno-inline -Wno-aggregate-return -Wno-missing-noreturn -Wno-suggest-attribute=const -Wno-suggest-attribute=pure -Wno-suggest-attribute=noreturn -Wno-suggest-attribute=format -O3
+                     AM C Flags: 
+               Shared C Library: yes
+               Static C Library: yes
+
+
+                        Fortran: yes
+               Fortran Compiler: /cm/shared/apps/gcc/5.4.0/bin/gfortran ( GNU Fortran (GCC) 5.4.0)
+                  Fortran Flags: 
+               H5 Fortran Flags:  -pedantic -Wall -Wextra -Wunderflow -Wimplicit-interface -Wsurprising -Wno-c-binding-type  -s -O2
+               AM Fortran Flags: 
+         Shared Fortran Library: yes
+         Static Fortran Library: yes
+
+                            C++: no
+
+                           Java: no
+
+
+Features:
+---------
+                  Parallel HDF5: no
+             High-level library: yes
+                   Threadsafety: no
+            Default API mapping: v110
+ With deprecated public symbols: yes
+         I/O filters (external): deflate(zlib)
+                            MPE: no
+                     Direct VFD: no
+                        dmalloc: no
+ Packages w/ extra debug output: none
+                    API tracing: no
+           Using memory checker: no
+Memory allocation sanity checks: no
+            Metadata trace file: no
+         Function stack tracing: no
+      Strict file format checks: no
+   Optimization instrumentation: no
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5F.c line 582 in H5Fopen(): can't set access and transfer property lists
+    major: File accessibilty
+    minor: Can't set value
+  #001: H5Pint.c line 5504 in H5P_verify_apl_and_dxpl(): not the required access property list
+    major: Property lists
+    minor: Inappropriate type
+  #002: H5Pint.c line 3765 in H5P_isa_class(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+HDF5-DIAG: Error detected in HDF5 (1.10.1) thread 0:
+  #000: H5P.c line 1513 in H5Pclose(): not a property list
+    major: Invalid arguments to routine
+    minor: Inappropriate type
+cdo remapnn: Nearest neighbor weights from lonlat (60x23) to lonlat (37x21) grid, with source mask (1370)
+cdo remapnn: Processed 19656720 values from 1 variable over 14244 timesteps [1.81s 51MB]
+cdo expr: Processed 18053595 values from 7 variables over 7745 timesteps [1.27s 42MB]
+cdo sub: Processed 12035730 values from 2 variables over 15490 timesteps [1.06s 51MB]
+cdo setrtoc: Processed 6017865 values from 1 variable over 7745 timesteps [0.74s 39MB]
+cdo monsum: Processed 7570773 values from 1 variable over 8793 timesteps [0.44s 34MB]
+cdo monsum: Processed 3661632 values from 1 variable over 6357 timesteps [0.27s 31MB]
+cdo monsum: Processed 9266082 values from 1 variable over 10762 timesteps [0.54s 36MB]
+cdo monsum: Processed 4280472 values from 1 variable over 5662 timesteps [0.28s 32MB]
+cdo monsum: Processed 6017865 values from 1 variable over 7745 timesteps [0.37s 32MB]
