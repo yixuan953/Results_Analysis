@@ -53,8 +53,8 @@ def csv_to_xarray(csv_path, variables=None):
 
     return ds
 
-StudyAreas = ["Yangtze"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
-crop_types = ["mainrice"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
+StudyAreas = ["Rhine"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
+crop_types = ["maize","winterwheat"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 periods = {
             '1985-1994': slice('1985', '1994'),
             '1995-2004': slice('1995', '2004'),
@@ -72,8 +72,8 @@ for StudyArea in StudyAreas:
         Wl_noIrri = csv_to_xarray(Wl_noIrri_dir, variables=None)
         Wl_withIrri = csv_to_xarray(Wl_withIrri_dir, variables=None)
 
-        gap_wl = Yp["Storage"] - Wl_noIrri["Storage"]
-        gap_irri = Yp["Storage"] - Wl_withIrri["Storage"]
+        gap_wl = 100*(Yp["Storage"] - Wl_noIrri["Storage"])/Yp["Storage"]
+        gap_irri = 100*(Yp["Storage"] - Wl_withIrri["Storage"])/Yp["Storage"]
 
         avg_gaps_wl = {}
         avg_gaps_irri = {}
@@ -104,9 +104,9 @@ for StudyArea in StudyAreas:
             ax.set_title(f'{period_name}')
             ax.set_xlabel('Lon')
             ax.set_ylabel('Lat')
-        fig.suptitle('Potential yield - Water-limited yield without irrigation [kg/ha]', fontsize=16)
+        fig.suptitle('(Yp - Water-limited yield without irrigation)/Yp ', fontsize=16)
         plt.tight_layout(rect=[0, 0, 0.98, 0.95])  # leave space for suptitle
-        cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.85, label='Yield gap [kg/ha]')
+        cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.85, label='Yield gap [%]')
         output_path = os.path.join(output_dir, f"{StudyArea}_{crop}_Yp-wl.png")
         fig.savefig(output_path, dpi=300)
 
@@ -116,8 +116,8 @@ for StudyArea in StudyAreas:
             ax.set_title(f'{period_name}')
             ax.set_xlabel('Lon')
             ax.set_ylabel('Lat')
-        fig.suptitle('Potential yield - Water-limited yield with irrigation [kg/ha]', fontsize=16)
+        fig.suptitle('(Yp - Water-limited yield with irrigation)/Yp ', fontsize=16)
         plt.tight_layout(rect=[0, 0, 0.98, 0.95])  # leave space for suptitle
-        cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.85, label='Yield gap [kg/ha]')
+        cbar = fig.colorbar(im, ax=axes.ravel().tolist(), shrink=0.85, label='Yield gap [%]')
         output_path = os.path.join(output_dir, f"{StudyArea}_{crop}_Yp-wl-irri.png")
         fig.savefig(output_path, dpi=300)   
