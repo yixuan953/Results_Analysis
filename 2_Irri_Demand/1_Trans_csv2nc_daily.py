@@ -8,8 +8,8 @@ import xarray as xr
 import numpy as np
 import datetime as dt
 
-StudyAreas = ["LaPlata"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
-crop_types = ["mainrice"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
+StudyAreas = ["Rhine"] # ["Rhine", "Yangtze", "LaPlata", "Indus"]
+crop_types = ["winterwheat"] # ["maize","mainrice","secondrice","soybean","winterwheat","springwheat"]
 
 for StudyArea in StudyAreas:
     meteo_data_dir = f"/lustre/nobackup/WUR/ESG/zhou111/WOFOST-withoutNPLimit/CaseStudy_Meteo/{StudyArea}/{StudyArea}_Prec_daily_1981-2019.nc"

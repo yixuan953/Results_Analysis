@@ -20,8 +20,8 @@ meteo_input_dir="/lustre/nobackup/WUR/ESG/zhou111/WOFOST-withoutNPLimit/CaseStud
 process_dir="/lustre/nobackup/WUR/ESG/zhou111/Data/Processed/Hydro"
 
 # Crop types
-StudyAreas=("Yangtze") # "Rhine" "Yangtze" "LaPlata" "Indus"
-CropTypes=('mainrice' 'secondrice' 'winterwheat' 'soybean' 'maize') # 'mainrice' 'secondrice' 'springwheat' 'winterwheat' 'soybean' 'maize'
+StudyAreas=("Rhine") # "Rhine" "Yangtze" "LaPlata" "Indus"
+CropTypes=('winterwheat') # 'mainrice' 'secondrice' 'springwheat' 'winterwheat' 'soybean' 'maize'
 
 Cal_Daily_Irri_Demand(){
 

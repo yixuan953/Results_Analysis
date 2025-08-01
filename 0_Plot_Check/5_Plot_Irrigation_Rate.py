@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 import calendar
 import numpy as np
 
-input_dir = "/lustre/nobackup/WUR/ESG/zhou111/WOFOST-NPcycling/Data/CaseStudy_Irrigation/"
-StudyArea = "Yangtze"
-crop_types = ["maize","mainrice","secondrice","soybean","winterwheat"]
+input_dir = "/lustre/nobackup/WUR/ESG/zhou111/WOFOST-withoutNPLimit/CaseStudy_Irrigation/"
+StudyArea = "Indus"
+crop_types = ["maize", "mainrice", "winterwheat"]
 plot_year = 2005
 output_dir="/lustre/nobackup/WUR/ESG/zhou111/Plot/CaseStudy_Irri"
 
